@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import Categories from '../../categories/components/categories';
-import HandleError from '../../error/containers/handle-error';
-import Modal from '../../widgets/components/modal';
-import ModalContainer from '../../widgets/containers/modal-container';
 import HomeLayout from '../components/home-layout';
+import Categories from '../../categories/components/categories';
 import Related from '../components/related';
+import ModalContainer from '../../widgets/containers/modal-container';
+import Modal from '../../widgets/components/modal';
+import HandleError from '../../error/containers/handle-error';
 
 class Home extends Component {
     state = {
@@ -40,6 +40,7 @@ class Home extends Component {
                     }
                 </HomeLayout>
             </HandleError>
+
         );
     }
 }

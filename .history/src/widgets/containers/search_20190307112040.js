@@ -1,9 +1,6 @@
 import React, {Component} from 'react';
 import Search from '../components/search'
 class SearchContainer extends Component {
-    state = {
-        value: 'Luis Fonsi'
-    }
     handleSubmit = event => {
         event.preventDefault();
         console.log(this.input.value, 'submit')
@@ -13,7 +10,7 @@ class SearchContainer extends Component {
     }
     handleInputChange = event => {
         this.setState({
-            value: event.target.value.replace(' ','-')
+            value: event.target.value
         })
     }
     render(){
@@ -22,7 +19,7 @@ class SearchContainer extends Component {
             setRef={this.setInputRef}
             handleSubmit={this.handleSubmit}
             handleChange={this.handleInputChange}
-            value={this.state.value}
+            
             />
         )
     }

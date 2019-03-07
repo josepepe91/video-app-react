@@ -1,11 +1,11 @@
 import React from 'react'
 import Category from './category';
 import './categories.css';
-import SearchContainer from '../../widgets/containers/search'
+import Search '../../w'
 function Categories(props) {
     return (
         <div className="Categories">
-        <SearchContainer/>
+        <Search/>
             {
                 props.categories.map((item) => {
                     return <Category key={item.id}
